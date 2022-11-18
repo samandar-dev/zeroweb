@@ -431,8 +431,8 @@
 	<script>
 		// SLIDER PART ================================================
 
-		// var splide = new Splide('.splide');
-		// var splide = new Splide('.splide').mount();
+		var splide = new Splide('.splide');
+		var splide = new Splide('.splide').mount();
 
 		// splideBox.addEventListener('mousedown', () => {
 		// 	console.log('wwww');
@@ -447,6 +447,12 @@
 		// 	console.log(splide);
 		// 	itemActiveFunc()
 		// });
+
+		var splide = new Splide('.splide', {
+			direction: 'ttb',
+			height: '10rem',
+			wheel: true,
+		});
 
 		let actInx = 0
 		var splideBox = document.querySelector('.splide')
