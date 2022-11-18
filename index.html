@@ -362,24 +362,6 @@
 								<span><img src="./images/coo_13.svg"></span>
 								<span><img src="./images/coo_14.svg"></span>
 							</div>
-
-							<!--ul>
-								<li><img src="./images/coo_01.svg"></li>
-								<li><img src="./images/coo_02.svg"></li>
-								<li><img src="./images/coo_03.svg"></li>
-								<li><img src="./images/coo_04.svg"></li>
-								<li class="pdr_l"><img src="./images/coo_05.svg" width="90%"></li>
-								<li class="pdr_l"><img src="./images/coo_06.svg"></li>
-								<li class="pdr_l"><img src="./images/coo_07.svg" width="90%"></li>
-								<li><img src="./images/coo_08.svg"></li>
-								<li><img src="./images/coo_09.svg" width="86%"></li>
-								<li><img src="./images/coo_10.svg" width="80%"></li>
-								<li><img src="./images/coo_11.svg"></li>
-								<li><img src="./images/coo_12.svg" width="90%"></li>
-								<li><img src="./images/coo_13.svg"></li>
-								<li><img src="./images/coo_14.svg"></li>
-
-							</ul-->
 						</div>
 					</div>
 
@@ -444,13 +426,29 @@
 	<script src="./js/ScrollMagic.js"></script>
 	<script src="./js/animation.gsap.js"></script>
 	<!-- <script src="./js/splide.min.js"></script> -->
-	<!-- <script src="./js/side.js"></script> -->
+	<script src="./js/side.js"></script>
 
 	<script>
 		// SLIDER PART ================================================
 
-		let actInx = 0
 		// var splide = new Splide('.splide');
+		// var splide = new Splide('.splide').mount();
+
+		// splideBox.addEventListener('mousedown', () => {
+		// 	console.log('wwww');
+		// 	itemActiveFunc()
+		// })
+
+		// document.addEventListener('DOMContentLoaded', function () {
+		// 	splide.mount();
+		// });
+
+		// splide.on('move', function () {
+		// 	console.log(splide);
+		// 	itemActiveFunc()
+		// });
+
+		let actInx = 0
 		var splideBox = document.querySelector('.splide')
 		var listItems = document.querySelectorAll('.slide')
 		var list = document.getElementById('slide-slider-list')
@@ -480,41 +478,6 @@
 			})
 		})
 
-		// var splide = new Splide('.splide').mount();
-
-		// splideBox.addEventListener('mousedown', () => {
-		// 	console.log('wwww');
-		// 	itemActiveFunc()
-		// })
-
-		// document.addEventListener('DOMContentLoaded', function () {
-		// 	splide.mount();
-		// });
-
-
-		// splide.on('move', function () {
-		// 	console.log(splide);
-		// 	itemActiveFunc()
-
-		// });
-
-		// function itemActiveFunc() {
-		// 	console.log('ffff');
-		// 	console.log(list.style.cssText);
-
-		// 	if (list.style.cssText != '') {
-		// 		listItemsBtns.forEach((item, inx) => {
-		// 			item.addEventListener('click', () => {
-		// 				if (`transform: translateX(-${inx * 103.28}px);` == list.style.cssText) {
-		// 					console.log('aa');
-		// 					listItemsBtns[inx].classList.add('on')
-		// 					listItems[inx].classList.add('tab-on')
-		// 					list.style.transform = `translateX(-${inx * 103.28}%)`
-		// 				}
-		// 			})
-		// 		})
-		// 	}
-		// }
 
 		// ScrollMagic PART ================================================
 
@@ -536,7 +499,7 @@
 			new ScrollMagic.Scene({
 				triggerElement: "#pinContainer",
 				triggerHook: "onLeave",
-				duration: "200%",
+				duration: "150%",
 			})
 				.setPin("#pinContainer")
 				.setTween(wipeAnimation1)
@@ -546,7 +509,7 @@
 			new ScrollMagic.Scene({
 				triggerElement: "#pinContainer",
 				triggerHook: "onLeave",
-				duration: "200%",
+				duration: "150%",
 			})
 				.setTween(wipeAnimation2)
 				.addTo(controller);
@@ -554,7 +517,7 @@
 			new ScrollMagic.Scene({
 				triggerElement: "#pinContainer",
 				triggerHook: "onLeave",
-				duration: "200%",
+				duration: "150%",
 			})
 				.setTween(wipeAnimation3)
 				.addTo(controller);
@@ -582,7 +545,7 @@
 				.addIndicators({ name: "resize" }) // add indicators (requires plugin)
 				.addTo(controller);
 
-			var scene2 = new ScrollMagic.Scene({ triggerElement: "#multiDirect", duration: 3000, offset: 2000 })
+			var scene2 = new ScrollMagic.Scene({ triggerElement: "#multiDirect", duration: 1500, offset: 1620 })
 				.setTween(tween2)
 				.setPin("#animate-movie")
 				.addIndicators({ name: "resize" }) // add indicators (requires plugin)
@@ -639,7 +602,7 @@
 				typo_movie_section.classList.remove('intro_txt-none')
 				document.body.style.background = '#160531'
 			}
-			if (window.scrollY >= 5800) {
+			if (window.scrollY >= 4800) {
 				document.body.style.background = '#fff'
 				typo_movie_section.classList.add('intro_txt-none')
 			}
