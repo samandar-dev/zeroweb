@@ -914,6 +914,9 @@ div.sec span {
 	.slider_wrap {
 		height: 540px;
 	}
+	.panel h1 {
+		font-size: 62px;
+	}
 }
 
 @media all and (max-width: 1000px) {
@@ -958,6 +961,9 @@ div.sec span {
 
 	.ty_line {
 		height: 43px;
+	}
+	.panel h1 {
+		font-size: 46px;
 	}
 	/* 2*/
 	.serv_wrap {
@@ -1154,11 +1160,22 @@ div.sec span {
 	}
 }
 @media all and (max-width: 640px) {
+	.panel h1 {
+		font-size: 36px;
+	}
+}
+@media all and (max-width: 450px) {
+	.panel h1 {
+		font-size: 28px;
+	}
+	.ty_line {
+		height: 24px;
+	}
 }
 
 @media all and (max-width: 390px) {
 	.ty_line {
-		height: 30px;
+		height: 25px;
 	}
 	.creat_top .creat_stxt {
 		font-size: 1em;
@@ -1180,6 +1197,9 @@ div.sec span {
 	.foot_cont li a {
 		font-size: 0.8em !important;
 		margin-right: 2vw;
+	}
+	.panel h1 {
+		font-size: 24px;
 	}
 }
 
