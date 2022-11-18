@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="kor">
+
+<head>
+	<meta charset="utf-8">
+	<title>new ZEROWEB</title>
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<!-- <link rel="stylesheet" href="./css/splide.min.css"> -->
+</head>
+
+<body>
+
+	<div class="header">
+		<div class="logo">
+			<a href="/"><img src="./images/zeroweb_logo.svg" class="white"></a>
+		</div>
+		<div class="nav_group mo">
+			<ul>
+				<li><a href="/">TECHNOLOGY</a></li>
+				<li><a href="/html/webapp.html">WEB APP</a></li>
+				<li><a href="/html/marketing.html">MARKETING</a></li>
+				<li><a href="/html/company.html">COMPANY</a></li>
+			</ul>
+		</div>
+		<div class="nav_menu pc" onclick="openNav()">
+			<img src="/images/nav_menu.svg">
+		</div>
+	</div>
+
+	<div id="mySidenav" class="sidenav">
+		<div href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</div>
+		<a href="/">TECHNOLOGY</a>
+		<a href="/html/webapp.html">WEB APP</a>
+		<a href="/html/marketing.html">MARKETING</a>
+		<a href="/html/company.html">COMPANY</a>
+	</div>
+
+	<div class="container">
+		<section id="section1" class="typo_wrap theme-dark">
+			<div class="m_sticky">
+				<div class="circle_img" id="animate" data-scroll>
+					<img src="./images/main_circle.png" width="70%" class="circle_rotate">
+				</div>
+
+				<div class="intro_txt intro_txt_hero" id="intro_txt_one">
+					<h1>사람의 움직임에<br>기술을 더해</h1>
+				</div>
+
+				<div class="intro_txt wrap intro_txt_hero" id="intro_txt_two">
+					<h1>데이터를 의미있게<br>연결하여</h1>
+				</div>
+			</div>
+		</section>
+
+		<section id="typo_movie-section" class="typo_wrap theme-dark typo_movie-section">
+			<div class="intro_txt intro_txt_move wrap">
+				<h1>우리의 삶을<br>더욱 효율적으로</h1>
+
+				<div class="movie_cont" id="animate-movie">
+					<video preload="auto" autoplay="" loop="" muted=""
+						style="transform: translate3d(0px, 0px, 0px) scale(1.0098, 1.0098);">
+						<source src="./images/about_mov.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<section class="section__main">
+		<section id="section2" class="typo_wrap theme-dark hidden">
+			<div class="">
+				<div id="pinContainer">
+					<section class="panel turqoise">
+						<h1>Real<span class="ty_line"></span>World Data</h1><br>
+					</section>
+
+					<section class="panel green">
+						<h1>Discover Innovation</h1>
+					</section>
+
+					<section class="panel img">
+						<div class="triang_img"><img src="./images/triangle_icon.svg" width="100%"></div>
+					</section>
+				</div>
+			</div>
+		</section>
+
+		<section id="section3">
+			<div class="serv_wrap">
+				<div class="serv_content">
+					<h1 class="serv_tit">People<br>Counting</h1>
+					<div class="serv_txt">
+						<h3 class="sm_tit">사람의 움직임을 통한 공간 분석</h3>
+						<span class="sm_txt">IoT 융합 기술로 얻은 입출입, 체류시간 등 다양한 오프라인 데이터로 유의미한 인사이트를 얻고 공간 경험을
+							개선합니다.</span>
+					</div>
+				</div>
+				<div class="serv_content mgleft10">
+					<div class=""><img src="./images/peo_01.png" width="100%"></div>
+				</div>
+			</div>
+
+
+			<div class="serv_wrap">
+				<div class="serv_content mo">
+					<div class="life_thum">
+						<div class="life_imgwarp" style="position:relative;">
+							<img src="./images/life_img02.png" width="100%" class="life_img02">
+							<img src="./images/life_img01.png" width="100%" class="life_img01">
+						</div>
+
+					</div>
+				</div>
+				<div class="serv_content life_inner">
+					<h1 class="serv_tit">Lifelog</h1>
+					<div class="serv_txt">
+						<h3 class="sm_tit">일상, 그 이상의 가치를 기록</h3>
+						<span class="sm_txt">라이프로그, ADL, 시니어 맞춤형 헬스케어 분석으로
+							안심하고 생활할 수 있는 디지털 사회안전망을 구축합니다.</span>
+					</div>
+				</div>
+				<div class="serv_content pc" style="position:relative;">
+					<div class="life_imgwarp" style="position:relative;">
+						<img src="./images/life_img02.png" width="100%" class="life_img02">
+						<img src="./images/life_img01.png" width="100%" class="life_img01">
+					</div>
+				</div>
+			</div>
+
+			<div class="serv_wrap">
+				<div class="serv_content  smart_inner">
+					<h1 class="serv_tit">Smart City</h1>
+					<div class="serv_txt">
+						<h3 class="sm_tit">데이터를 중심으로,<br>보다 나은 삶을 위한 미래 도시</h3>
+						<span class="sm_txt">혁신적인 도시 서비스를 선보이기 위해 도시 데이터를 분석하고 활용할 수 있는 환경을 제공합니다.</span>
+					</div>
+				</div>
+				<div class="serv_content">
+					<div class="smart_thum">
+						<span class="smart_img02"><img src="./images/smart_img02.png" width="100%"></span>
+						<span class="smart_img03"><img src="./images/smart_img03.png" width="100%"></span>
+						<span class="smart_img01"><img src="./images/smart_img01.png" width="100%"></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="serv_wrap">
+				<div class="serv_content mo">
+					<div class="digital_thum">
+						<span class="digital_img01"><img src="./images/digital_img01.png" width="100%"></span>
+						<span class="digital_img02"><img src="./images/digital_img02.png" width="100%"></span>
+					</div>
+				</div>
+				<div class="serv_content digi_inner">
+					<h1 class="serv_tit">Digital Twin</h1>
+					<div class="serv_txt">
+						<h3 class="sm_tit">더 현실같은 가상세계</h3>
+						<span class="sm_txt full_smtit">도심 속 실내외를 가상현실로 구현한 모니터링 관제 플랫폼으로
+							도시에서 실시간으로 발생하는 재난, 고독사 등을 선제적으로 대응가능한
+							스마트 솔루션을 제공합니다.</span>
+					</div>
+				</div>
+				<div class="serv_content pc">
+					<div class="digital_thum">
+						<span class="digital_img01"><img src="./images/digital_img01.png" width="100%"></span>
+						<span class="digital_img02"><img src="./images/digital_img02.png" width="100%"></span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="section4" class="theme-dark hidden">
+			<div class="section">
+				<div class="creat_set wrap ">
+					<div class="creat_top">
+						<h1 class="creat_tt">Creating<br><strong>New Connections</strong></h1>
+						<span class="creat_stxt">by Advancing technology</span>
+					</div>
+					<div class="creat_process">
+						<div class="creat_box">
+							<div class="creat_img"><img src="./images/creatin_process.svg" width="100%"></div>
+						</div>
+					</div>
+
+				</div>
+				<div class="creat_bg">
+					<img src="./images/creating_img.png" width="100%">
+				</div>
+			</div>
+
+			<div class="section theme-dark">
+				<div class="tech wrap">
+					<div class="tit_txt">
+						<h1>이 모든 걸<br>가능하게 하는 기술.</h1>
+					</div>
+					<div class="box_group">
+						<div class="box_01">
+							<div class="absol">
+								<h3>Realstep WPS</h3>
+								<p>SPOT과 CHECK-IN 기술의
+									결합으로 실시간으로 유동 인구의 위치 및 행동 데이터 수집</p>
+							</div>
+							<img src="./images/circuit.png" class="circuit">
+						</div>
+
+						<div class="box_03">
+							<div class="absol">
+								<h3>Untact Radar Sensor</h3>
+								<p>인체에 무해한 저출력 주파수로 사각지대 없이
+									움직임과 활동량을 실시간으로 측정</p>
+							</div>
+							<!--img src="/images/circuit.png" class="circuit"-->
+						</div>
+						<div class="box_02">
+							<div class="absol">
+								<h3>Intelligent Camera</h3>
+								<p>카메라에 영상처리 인공 지능 기술을 융합.
+									객체 분석을 통해 성별, 연령대, 재방문 비율 등 퍼스널
+									데이터까지 실시간으로 수집 가능한 이미지 프로세싱 기술.</p>
+							</div>
+							<img src="./images/img2.png" class="circuit2">
+						</div>
+					</div>
+
+					<div class="bg_txt paralax-title">
+						<div>Our Technologe</div>
+					</div>
+				</div>
+
+				<div class="cir_bg1">
+					<img src="./images/rou_bg.png" width="100%">
+				</div>
+				<div class="cir_bg2">
+					<img src="./images/rou_01.png" width="100%">
+				</div>
+				<div class="cir_bg3">
+					<img src="./images/rou_02.png" width="100%">
+				</div>
+				<div class="cir_bg4">
+					<img src="./images/rou_03.png" width="100%">
+				</div>
+			</div>
+		</section>
+		<section id="section5" class="theme-dark">
+			<div class="section">
+				<div class="sinerg wrap">
+					<div class="tit_txt">
+						<h1>기술과 경험의 시너지<br>
+							혁신을 창조.</h1>
+					</div>
+					<div class="sinerg_tabmenu mo">
+						<ul class="tab">
+							<li id="tab-slide-btn" class="on">IP</li>
+							<li id="tab-slide-btn">Awards</li>
+							<li id="tab-slide-btn">Government Business</li>
+							<li id="tab-slide-btn">Global Business Fair</li>
+						</ul>
+					</div>
+					<div class="slider_wrap">
+						<div class="slider">
+							<ul class="inner_slider" id="slide-slider-list">
+								<li class="slide ">
+									<ul class="sinerg_contet">
+										<li><span>22.06</span>객체 추적이 용이한 영상 관제 시스템 특허 출원</li>
+										<li><span>22.05</span>LoRa 기반 유동인구 계측 무선장치 특허권 취득</li>
+										<li><span>22.03</span>단위계측범위 자동설정형 유동인구 계측 장치 특허 출원</li>
+										<li><span>15.05</span>Wifi Fingerprint 기반 위치인식용 radio map 자동업데이트 방법 특허권 취득
+										</li>
+										<li><span>20.08</span>주 거주공간 클러스터링 방법 특허권 취득</li>
+										<li><span>19.04</span>실내 위치기반 서비스 제공방법 (JPN)</li>
+										<li><span>18.04</span>실내 위치기반 서비스 제공방법 (KOR)</li>
+									</ul>
+								</li>
+								<li class="slide">
+									<ul class="sinerg_contet">
+										<li><span>2022</span>통합관제시스템 TTA Verified 인증</li>
+										<li><span>2022</span>KCI 논문 등재</li>
+										<li><span>2021</span>한국정보통신학회 우수논문수상<br><em>‘MAC address 분류를 통한 Wi-Fi
+												proberequest 기반 유동인구 분석 방법’ / ‘설치가 간편한 IR 적외선센서를 활용한 출입문 유동인구 계측
+												방법’</em></li>
+										<li><span>2019</span>대한민국 위치기반 서비스 공모전 대상 수상</li>
+									</ul>
+									<div class="award_group">
+										<img src="./images/award_01.svg">
+										<img src="./images/award_02.svg">
+										<img src="./images/award_03.svg">
+										<img src="./images/award_04.svg">
+									</div>
+
+								</li>
+								<li class="slide">
+									<ul class="sinerg_contet">
+										<li>과학기술정보통신부 공공조달 연계 R&D 실증 사업화</li>
+										<li>국토교통부 국토교통기술사업화(민간투자연계형)</li>
+										<li>국토교통부 스마트시티챌린지 본사업</li>
+										<li>중소벤처기업부 중소기업 기술혁신개발(시장확대형)</li>
+										<li>과학기술정보통신부 5G 디지털트윈 공공선도사업</li>
+										<li>국토교통부 스마트시티 시범도시 규제샌드박스 활성화(1단계)</li>
+										<li>중소벤처기업부 지역특화(주력)산업육성 기술개발</li>
+										<li>산업통상자원부 R&D사업 투자형</li>
+									</ul>
+
+								</li>
+								<li class="slide">
+									<ul class="sinerg_contet">
+										<li>ASEAN-ROK SMART CITY FAIR <em>ODMP(Offline Data Management
+												Platform)</em>
+										</li>
+										<li>Consumer Electronics Show <em>Life Log Analysis Technology and Control
+												Platform</em></li>
+										<li>Vietnam International Industrial Fair<em> Indoor Location Based Service
+												Grand Prize</em></li>
+										<li>Las Vegas infocomm<em> Life Log Analysis Technology and Control
+												Platform</em></li>
+										<li>SCEWC(The Smart City Expo World Congress <em>Smart City Demonstration
+												City
+												Innovation Service</em></li>
+										<li>UAE DUBAI GITEX GLOBAL <em>Smart City Indoor Positioning Technology and
+												Disaster Safety Platform</em></li>
+										<li>WORLD SMART CITY EXPO<em>Interior navigation positioning technology</em>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="section6" class="theme-dark">
+			<div class="section">
+				<div class="partner wrap">
+					<div class="tit_txt">
+						<h2>Empowering companies<br>
+							<strong>to build better<br>
+								service with better data</strong>
+						</h2>
+						<div class="coo_group">
+							<div class="coo_logos fir">
+								<span><img src="./images/coo_01.svg"></span>
+								<span><img src="./images/coo_02.svg"></span>
+								<span><img src="./images/coo_03.svg"></span>
+								<span><img src="./images/coo_04.svg"></span>
+								<span><img src="./images/coo_05.svg"></span>
+								<span><img src="./images/coo_06.svg"></span>
+								<span><img src="./images/coo_07.svg"></span>
+							</div>
+							<div class="coo_logos sec">
+								<span><img src="./images/coo_08.svg"></span>
+								<span><img src="./images/coo_09.svg"></span>
+								<span><img src="./images/coo_10.svg"></span>
+								<span><img src="./images/coo_11.svg"></span>
+								<span><img src="./images/coo_15.svg"></span>
+								<span><img src="./images/coo_13.svg"></span>
+								<span><img src="./images/coo_14.svg"></span>
+							</div>
+
+							<!--ul>
+								<li><img src="./images/coo_01.svg"></li>
+								<li><img src="./images/coo_02.svg"></li>
+								<li><img src="./images/coo_03.svg"></li>
+								<li><img src="./images/coo_04.svg"></li>
+								<li class="pdr_l"><img src="./images/coo_05.svg" width="90%"></li>
+								<li class="pdr_l"><img src="./images/coo_06.svg"></li>
+								<li class="pdr_l"><img src="./images/coo_07.svg" width="90%"></li>
+								<li><img src="./images/coo_08.svg"></li>
+								<li><img src="./images/coo_09.svg" width="86%"></li>
+								<li><img src="./images/coo_10.svg" width="80%"></li>
+								<li><img src="./images/coo_11.svg"></li>
+								<li><img src="./images/coo_12.svg" width="90%"></li>
+								<li><img src="./images/coo_13.svg"></li>
+								<li><img src="./images/coo_14.svg"></li>
+
+							</ul-->
+						</div>
+					</div>
+
+					<!--div class="coo_bg">
+						<img src="./images/spon_bg.png">
+					</div-->
+					<div class="cube_1">
+						<img src="./images/cube_01.png" width="100%">
+					</div>
+					<div class="cube_2">
+						<img src="./images/cube_02.png" width="100%">
+					</div>
+					<div class="cube_3">
+						<img src="./images/cube_03.png" width="100%">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- footer -->
+		<section id="" class="">
+			<div class="section">
+				<div class="foot wrap">
+					<!--div class="foot_logo"><img src="./images/zeroweb_logo_b.svg"></div-->
+
+					<h1 class="inves_txt">investment of 12 billion</h1>
+					<img src="./images/investment_logo.svg" class="invest_logos" width="100%">
+					<div class="foot_nav">
+
+						<!--ul>
+						<li class="under-ani">COMPANY</li>
+						<li class="under-ani">TECHNOLOGY</li>
+						<li class="under-ani">WEB APP</li>
+						<li class="under-ani">MARKETING</li>
+
+					</ul-->
+					</div>
+					<div class="foot_cont">
+						<ul>
+							<li class="addr">8F BCC, 140, Suyeonggangbyeon-daero,<br>Haeundae-gu, Busan</li>
+							<li class="numb">bizNum. 607-86-05339<br>
+								Tel. 1544-6044</li>
+							<li class="priv_group">
+								<a href="/html/agree.html" class="under-ani">Service</a>
+								<a href="/html/privacy.html" class="under-ani">Privacy </a>
+								<a href="/html/location.html" class="under-ani">Service location<a />
+							</li>
+							<li class="copyright">
+								ⓒ ZEROWEB Co.,Ltd. All Rights Reserved.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+
+	// SCRIPTS PART ================================================
+
+	<script src="./js/gsap.min.js"></script>
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/ScrollMagic.js"></script>
+	<script src="./js/animation.gsap.js"></script>
+	<!-- <script src="./js/splide.min.js"></script> -->
+	<!-- <script src="./js/side.js"></script> -->
+
+	<script>
+		// SLIDER PART ================================================
+
+		let actInx = 0
+		// var splide = new Splide('.splide');
+		var splideBox = document.querySelector('.splide')
+		var listItems = document.querySelectorAll('.slide')
+		var list = document.getElementById('slide-slider-list')
+		var listItemsBtns = document.querySelectorAll('#tab-slide-btn')
+		var listPagnition = document.querySelector('.splide__pagination--ltr')
+
+		listItems[0].classList.add('tab_on')
+		listItemsBtns.forEach((item, inx) => {
+			item.addEventListener('click', () => {
+				listItemsBtns.forEach((item, index) => {
+					if (inx === index) {
+						item.classList.add('on')
+					}
+					else {
+						item.classList.remove('on')
+					}
+				})
+				listItems.forEach((item, index) => {
+					if (inx === index) {
+						item.classList.add('tab_on')
+					}
+					else {
+						item.classList.remove('tab_on')
+					}
+				})
+				list.style.transform = `translateX(-${inx * 103.28}%)`
+			})
+		})
+
+		// var splide = new Splide('.splide').mount();
+
+		// splideBox.addEventListener('mousedown', () => {
+		// 	console.log('wwww');
+		// 	itemActiveFunc()
+		// })
+
+		// document.addEventListener('DOMContentLoaded', function () {
+		// 	splide.mount();
+		// });
+
+
+		// splide.on('move', function () {
+		// 	console.log(splide);
+		// 	itemActiveFunc()
+
+		// });
+
+		// function itemActiveFunc() {
+		// 	console.log('ffff');
+		// 	console.log(list.style.cssText);
+
+		// 	if (list.style.cssText != '') {
+		// 		listItemsBtns.forEach((item, inx) => {
+		// 			item.addEventListener('click', () => {
+		// 				if (`transform: translateX(-${inx * 103.28}px);` == list.style.cssText) {
+		// 					console.log('aa');
+		// 					listItemsBtns[inx].classList.add('on')
+		// 					listItems[inx].classList.add('tab-on')
+		// 					list.style.transform = `translateX(-${inx * 103.28}%)`
+		// 				}
+		// 			})
+		// 		})
+		// 	}
+		// }
+
+		// ScrollMagic PART ================================================
+
+		$(function () { // wait for document ready
+			// init
+			var controller = new ScrollMagic.Controller();
+
+			// define movement of panels
+			var wipeAnimation1 = new TimelineMax()
+				.fromTo("section.panel.turqoise", 1, { x: "-80%" }, { x: "0%", ease: Linear.easeNone })  // in from left
+
+			var wipeAnimation2 = new TimelineMax()
+				.fromTo("section.panel.green", 1, { x: "80%" }, { x: "0%", ease: Linear.easeNone })  // in from right
+
+			var wipeAnimation3 = new TimelineMax()
+				.fromTo("section.panel.img", 1, { top: "50%" }, { x: "0%", ease: Linear.easeNone })  // in from right
+
+			// create scene to pin and link animation
+			new ScrollMagic.Scene({
+				triggerElement: "#pinContainer",
+				triggerHook: "onLeave",
+				duration: "200%",
+			})
+				.setPin("#pinContainer")
+				.setTween(wipeAnimation1)
+				.addIndicators() // add indicators (requires plugin)
+				.addTo(controller);
+
+			new ScrollMagic.Scene({
+				triggerElement: "#pinContainer",
+				triggerHook: "onLeave",
+				duration: "200%",
+			})
+				.setTween(wipeAnimation2)
+				.addTo(controller);
+
+			new ScrollMagic.Scene({
+				triggerElement: "#pinContainer",
+				triggerHook: "onLeave",
+				duration: "200%",
+			})
+				.setTween(wipeAnimation3)
+				.addTo(controller);
+		});
+
+		$(function () { // wait for document ready
+			// init controller
+			var controller = new ScrollMagic.Controller();
+
+			// build tween
+			var tween = TweenMax.to("#animate", 0.7, { scale: 10, ease: Linear.easeNone, });
+			var tween2 = TweenMax.to("#animate-movie", 0.7,
+				{
+					// top: 0, 
+					left: 50 + "%",
+					borderRadius: 0,
+					width: 140 + 'vw',
+					height: 100 + 'vw',
+					ease: Linear.easeNone,
+				});
+
+			var scene = new ScrollMagic.Scene({ triggerElement: "#multiDirect", duration: 4000, offset: 1 })
+				.setTween(tween)
+				.setPin("#animate")
+				.addIndicators({ name: "resize" }) // add indicators (requires plugin)
+				.addTo(controller);
+
+			var scene2 = new ScrollMagic.Scene({ triggerElement: "#multiDirect", duration: 3000, offset: 2000 })
+				.setTween(tween2)
+				.setPin("#animate-movie")
+				.addIndicators({ name: "resize" }) // add indicators (requires plugin)
+				.addTo(controller);
+
+			// init controller horizontal
+			var controller_h = new ScrollMagic.Controller({ vertical: false });
+			var controller_h2 = new ScrollMagic.Controller({ vertical: false });
+
+			// build tween horizontal
+			var tween_h = TweenMax.to("#animate", 0.5, { rotation: 160, ease: Linear.easeNone });
+			var tween_h2 = TweenMax.to("#animate", 0.5, { rotation: 160, ease: Linear.easeNone });
+
+			var scene_h = new ScrollMagic.Scene({ duration: 700 })
+				.setTween(tween_h)
+				.setPin("#animate")
+				.addIndicators({ name: "rotate" }) // add indicators (requires plugin)
+				.addTo(controller_h);
+
+			var scene_h2 = new ScrollMagic.Scene({ duration: 700 })
+				.setTween(tween_h2)
+				.setPin("#animate")
+				.addIndicators({ name: "rotate" }) // add indicators (requires plugin)
+				.addTo(controller_h2);
+		});
+
+		let oval = document.getElementById('animate')
+		let txt1 = document.getElementById('intro_txt_one')
+		let txt2 = document.getElementById('intro_txt_two')
+		let typo_movie_section = document.querySelector('.typo_movie-section')
+
+		document.body.style.background = '#160531'
+		txt2.classList.add('intro_txt-none')
+		typo_movie_section.classList.add('intro_txt-none')
+
+		function ScrollHandler() {
+			if (window.scrollY <= 300) {
+				txt1.classList.remove('intro_txt-none')
+				txt2.classList.add('intro_txt-none')
+				typo_movie_section.classList.add('intro_txt-none')
+				document.body.style.background = '#160531'
+			}
+			else {
+				txt1.classList.add('intro_txt-none')
+				oval.classList.remove('intro_txt-none')
+				txt2.classList.remove('intro_txt-none')
+				typo_movie_section.classList.add('intro_txt-none')
+				document.body.style.background = '#160531'
+			}
+			if (window.scrollY >= 1650) {
+				txt1.classList.add('intro_txt-none')
+				oval.classList.add('intro_txt-none')
+				txt2.classList.add('intro_txt-none')
+				typo_movie_section.classList.remove('intro_txt-none')
+				document.body.style.background = '#160531'
+			}
+			if (window.scrollY >= 5800) {
+				document.body.style.background = '#fff'
+				typo_movie_section.classList.add('intro_txt-none')
+			}
+		}
+		window.onscroll = ScrollHandler
+	</script>
+
+
+
+</body>
+
+</html>
